@@ -115,8 +115,8 @@ if ($api->getClient()->getAccessToken()) {
         'uploadType' => 'multipart'
     ]);
 
-    // file be stored/downloaded with this name: $id.mimetype
-    // As its written on there documentation, Google Drive allows to upload binary files only.
+    // file will be stored/downloaded with this name: $id.mimetype
+    // As its written on there documentation, Google Drive allows to download binary files only.
     $api->downloadFile('125a2fLbBZwKTjj-D0IuoM3EQwtTCDQv2m6E9OW_iKOY', __DIR__);
 }
 ```
