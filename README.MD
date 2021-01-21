@@ -26,7 +26,7 @@ Instructions
 
 ```php
 // Get the API client and construct the service object.
-$api = new GoogleDriveRepository();
+$api = new \Miqoo1996\GDrive\Repositories\GoogleDriveRepository();
 ```
 
 * to get URL to login or update account (access_token) see the below example
@@ -35,6 +35,7 @@ $api = new GoogleDriveRepository();
 ```
 
 ```php
+$api = new \Miqoo1996\GDrive\Repositories\GoogleDriveRepository();
 
 // or you can check this in session.
 if ($api->getClient()->getAccessToken()) {
